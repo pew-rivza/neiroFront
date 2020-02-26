@@ -33,5 +33,7 @@ export function makeTypeIcon(type) {
             return <i className="fa fa-heart-o"></i>;
         case "client":
             return <i className="fa fa-user-o"></i>;
+        default:
+            return <i className="fa fa-ban"></i>;
     }
 }
