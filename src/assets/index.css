@@ -84,3 +84,19 @@ body {
     flex-direction: column;
     margin: 20px;
 }
+
+.button {
+    background: #0053A9;
+    color: #fff;
+    font-weight: 700;
+    padding: 10px 15px;
+    border: 0;
+    border-radius: 5px;
+    margin-top: 30px;
+}
+
+.error-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}

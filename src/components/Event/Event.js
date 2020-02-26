@@ -10,7 +10,9 @@ class Event extends Component {
             <div className={"event-item"}>
                 <div className={"event-avatar"}>
                     <div className={"event-avatar-container"}>
-                        <img src={event.image}/>
+                        <img src={event.image ? event.image :
+                            "https://cdn0.iconfinder.com/data/icons/people-12/24/Anonymous-2-512.png"}
+                             alt={"Обнануженное лицо"}/>
                     </div>
                     <div className={"event-type-icon"}>
                         {makeTypeIcon(event.user ? event.user.type.name : event.user)}

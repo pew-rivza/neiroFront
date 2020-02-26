@@ -39,7 +39,7 @@ class App extends Component {
                     {
                         eventsLoaders
                     }
-                    <button onClick={this.incrementPortion}>Еще</button>
+                    <button onClick={this.incrementPortion} className={"button"}>Еще</button>
                 </div>
                 </div>
         )

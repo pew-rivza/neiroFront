@@ -8,8 +8,8 @@ export const getEventsList = (render, params = {}, key) =>
     <Post key={key} url={SERVER + "/api/event/get"} data={params}>
         {(error, response, isLoading, makeRequest, axios) => {
             if(error) {
-                return (<div>Что-то пошло не так: {error.message}<br/>
-                <button onClick={() => makeRequest({ params: { reload: true } })}>
+                return (<div className={"error-container"}>Что-то пошло не так: {error.message}<br/>
+                <button className={"button"} onClick={() => makeRequest({ params: { reload: true } })}>
                     Попробовать снова
                 </button></div>)
             }
