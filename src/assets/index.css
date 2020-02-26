@@ -1,0 +1,86 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.event-item {
+    background: #f5faff;
+    border: 1px solid #d1d1d1;
+    border-radius: 5px;
+    display: flex;
+    padding: 20px;
+    width: 500px;
+}
+
+.event-item + .event-item {
+    margin-top: 20px;
+}
+
+.event-avatar {
+    height: 70px;
+    position: relative;
+    width: 90px;
+}
+
+.event-avatar-container {
+    height: 70px;
+    margin-right: 20px;
+    overflow-y: hidden;
+    width: 70px;
+}
+
+.event-avatar img {
+    width: 100%;
+}
+
+.event-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.event-datetime {
+    color: #9b9b9b;
+    font-size: 14px;
+}
+
+.event-type-icon {
+    position: absolute;
+    right: 13px;
+    bottom: -14px;
+    font-size: 30px;
+    color: #0053a9;
+}
+
+.event-list {
+    width: 540px;
+    border: 1px solid #9b9b9b;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-radius: 0 0 5px 5px;
+}
+
+.events-list-header {
+    background: #f5faff;
+    border: 1px solid #9b9b9b;
+    border-bottom-width: 0;
+    border-radius: 5px 5px 0 0;
+    color: #8693a1;
+    font-weight: 900;
+    padding: 20px;
+    text-align: center;
+    width: 540px;
+}
+
+.events-container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
